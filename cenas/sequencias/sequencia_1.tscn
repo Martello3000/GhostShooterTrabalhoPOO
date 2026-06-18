@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://csrnur2y3lwje"]
+[gd_scene load_steps=4 format=3 uid="uid://csrnur2y3lwje"]
 
 [ext_resource type="Script" uid="uid://b4wpjy6aby1ay" path="res://scripts/scriptsSequencias/sequencia_1.gd" id="1_3n3gg"]
 
@@ -14,22 +14,22 @@ _data = {
 }
 point_count = 8
 
-[node name="Sequencia1" type="Node2D" unique_id=1347312226]
+[node name="Sequencia1" type="Node2D"]
 script = ExtResource("1_3n3gg")
 
-[node name="Path2D" type="Path2D" parent="." unique_id=509785231]
+[node name="Path2D" type="Path2D" parent="."]
 curve = SubResource("Curve2D_1oma6")
 
-[node name="Alvo1" type="PathFollow2D" parent="Path2D" unique_id=1205122825]
+[node name="Alvo1" type="PathFollow2D" parent="Path2D"]
 position = Vector2(-139, 306)
 rotation = -0.0030302939
 rotates = false
 loop = false
 
-[node name="Path2D2" type="Path2D" parent="." unique_id=459079200]
+[node name="Path2D2" type="Path2D" parent="."]
 curve = SubResource("Curve2D_3n3gg")
 
-[node name="Alvo1" type="PathFollow2D" parent="Path2D2" unique_id=952405848]
+[node name="Alvo1" type="PathFollow2D" parent="Path2D2"]
 position = Vector2(1849, 599)
 rotates = false
 loop = false

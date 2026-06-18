@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://crhfwjxec1xlp"]
+[gd_scene load_steps=6 format=3 uid="uid://crhfwjxec1xlp"]
 
 [ext_resource type="Script" uid="uid://x6oj5yp0b2vo" path="res://scripts/scriptsSequencias/sequencia_2.gd" id="1_17jmg"]
 
@@ -26,43 +26,43 @@ _data = {
 }
 point_count = 8
 
-[node name="Sequencia2" type="Node2D" unique_id=1241930929]
+[node name="Sequencia2" type="Node2D"]
 script = ExtResource("1_17jmg")
 
-[node name="Path2D" type="Path2D" parent="." unique_id=2061101466]
+[node name="Path2D" type="Path2D" parent="."]
 curve = SubResource("Curve2D_n2fll")
 
-[node name="Alvo2" type="PathFollow2D" parent="Path2D" unique_id=1734840064]
+[node name="Alvo2" type="PathFollow2D" parent="Path2D"]
 position = Vector2(-95, 160)
 rotates = false
 loop = false
 
-[node name="Path2D2" type="Path2D" parent="." unique_id=1032898046]
+[node name="Path2D2" type="Path2D" parent="."]
 position = Vector2(0, 242)
 curve = SubResource("Curve2D_n2fll")
 
-[node name="Alvo2" type="PathFollow2D" parent="Path2D2" unique_id=734051977]
+[node name="Alvo1" type="PathFollow2D" parent="Path2D2"]
 position = Vector2(-95, 160)
 rotates = false
 loop = false
 
-[node name="Path2D3" type="Path2D" parent="." unique_id=450607066]
+[node name="Path2D3" type="Path2D" parent="."]
 curve = SubResource("Curve2D_17jmg")
 
-[node name="Alvo1" type="PathFollow2D" parent="Path2D3" unique_id=167950624]
+[node name="Alvo1" type="PathFollow2D" parent="Path2D3"]
 position = Vector2(-1766, 713)
 rotation = 0.041785516
 
-[node name="Path2D4" type="Path2D" parent="." unique_id=198998910]
+[node name="Path2D4" type="Path2D" parent="."]
 curve = SubResource("Curve2D_5y7ny")
 
-[node name="Alvo1" type="PathFollow2D" parent="Path2D4" unique_id=2022122746]
+[node name="Alvo1" type="PathFollow2D" parent="Path2D4"]
 position = Vector2(-2077, 695)
 rotation = 0.043806255
 
-[node name="Path2D5" type="Path2D" parent="." unique_id=1842635926]
+[node name="Path2D5" type="Path2D" parent="."]
 curve = SubResource("Curve2D_00wp6")
 
-[node name="Alvo1" type="PathFollow2D" parent="Path2D5" unique_id=521736462]
+[node name="Alvo1" type="PathFollow2D" parent="Path2D5"]
 position = Vector2(-2302, 680)
 rotation = 0.046468046

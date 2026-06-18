@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://cubri1vedqnts" path="res://scripts/scriptsPlayer/player.gd" id="1_w152q"]
 [ext_resource type="Texture2D" uid="uid://d0apyxj4f67ss" path="res://assets/placeholders/crosshairs/Circle_Crosshair8.png" id="2_4i5rx"]
+[ext_resource type="PackedScene" uid="uid://bm8723jv36bya" path="res://cenas/hud/hud.tscn" id="3_4i5rx"]
+[ext_resource type="LabelSettings" uid="uid://l6egesvaf25o" path="res://misc/new_label_settings.tres" id="3_a8ubr"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_w152q"]
 radius = 35.0
@@ -17,7 +19,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Player" type="Node2D" unique_id=331922840 node_paths=PackedStringArray("crosshair", "colisao_tiro", "hitbox_tiro", "CDTimer", "BarraCD")]
+[node name="Player" type="Node2D" unique_id=331922840 node_paths=PackedStringArray("crosshair", "colisao_tiro", "hitbox_tiro", "CDTimer", "BarraCD", "ReloadTimer", "textoReload")]
 z_index = 2
 script = ExtResource("1_w152q")
 crosshair = NodePath("Mira")
@@ -25,6 +27,8 @@ colisao_tiro = NodePath("HitboxTiro/CollisionShape2D")
 hitbox_tiro = NodePath("HitboxTiro")
 CDTimer = NodePath("CooldownTimer")
 BarraCD = NodePath("Mira/ProgressBar")
+ReloadTimer = NodePath("ReloadTimer")
+textoReload = NodePath("textoDeReload")
 
 [node name="HitboxTiro" type="Area2D" parent="." unique_id=1899716464]
 collision_layer = 4
@@ -48,9 +52,29 @@ offset_bottom = 72.0
 max_value = 0.0
 show_percentage = false
 
+[node name="textoDeReload" type="Node2D" parent="." unique_id=172859156]
+visible = false
+
+[node name="textoReload" type="Label" parent="textoDeReload" unique_id=673318658]
+offset_left = -159.0
+offset_top = -31.0
+offset_right = 157.0
+offset_bottom = 22.0
+pivot_offset = Vector2(158.38, 31.315)
+size_flags_horizontal = 4
+text = "Reloading"
+label_settings = ExtResource("3_a8ubr")
+
 [node name="CooldownTimer" type="Timer" parent="." unique_id=970569641]
 wait_time = 0.25
 one_shot = true
 
+[node name="ReloadTimer" type="Timer" parent="." unique_id=976762302]
+wait_time = 1.5
+one_shot = true
+
+[node name="HUD" parent="." unique_id=1464992753 instance=ExtResource("3_4i5rx")]
+
 [connection signal="area_entered" from="HitboxTiro" to="." method="_on_hitbox_tiro_area_entered"]
 [connection signal="timeout" from="CooldownTimer" to="." method="_on_cooldown_timer_timeout"]
+[connection signal="timeout" from="ReloadTimer" to="." method="_on_reload_timer_timeout"]

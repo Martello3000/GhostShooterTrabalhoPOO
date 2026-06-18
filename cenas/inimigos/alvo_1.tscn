@@ -1,27 +1,23 @@
-[gd_scene format=3 uid="uid://ci1mxk8qhnoav"]
+[gd_scene load_steps=4 format=3 uid="uid://ci1mxk8qhnoav"]
 
 [ext_resource type="Script" uid="uid://cbxkf6o3gpqth" path="res://scripts/scriptsInimigos/alvo_1.gd" id="1_5ok5q"]
-[ext_resource type="Texture2D" uid="uid://bk8wt6os6o10r" path="res://assets/placeholders/inimigos/alvos/duck_brown.png" id="1_yl6d4"]
-[ext_resource type="Texture2D" uid="uid://c3yit2un0jyyr" path="res://assets/placeholders/inimigos/suportes/stick_wood.png" id="2_5ok5q"]
+[ext_resource type="Texture2D" uid="uid://cr1jcx4gpdqja" path="res://assets/placeholders/inimigos/Fantasma triste (1).png" id="2_yl6d4"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_mrd2b"]
-radius = 52.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5ok5q"]
+size = Vector2(86, 102)
 
-[node name="Alvo1" type="Node2D" unique_id=916845146]
+[node name="Alvo1" type="Node2D"]
 script = ExtResource("1_5ok5q")
 
-[node name="AlvoPrincipal" type="Sprite2D" parent="." unique_id=104580922]
-texture = ExtResource("1_yl6d4")
+[node name="AlvoPrincipal" type="Sprite2D" parent="."]
+position = Vector2(-2.0000029, 5.000002)
+scale = Vector2(5.1874995, 4.4375)
+texture = ExtResource("2_yl6d4")
 
-[node name="Suporte" type="Sprite2D" parent="AlvoPrincipal" unique_id=1401059899]
-z_index = -1
-position = Vector2(-1, 102)
-texture = ExtResource("2_5ok5q")
-
-[node name="Hurtbox" type="Area2D" parent="." unique_id=1827457967]
+[node name="Hurtbox" type="Area2D" parent="."]
 collision_layer = 2
 collision_mask = 4
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" unique_id=1985973729]
-position = Vector2(0, 2)
-shape = SubResource("CircleShape2D_mrd2b")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+position = Vector2(2, 2)
+shape = SubResource("RectangleShape2D_5ok5q")
