@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://csrnur2y3lwje"]
+[gd_scene load_steps=4 format=3 uid="uid://csrnur2y3lwje"]
 
 [ext_resource type="Script" uid="uid://b4wpjy6aby1ay" path="res://scripts/scriptsSequencias/sequencia_1.gd" id="1_3n3gg"]
 
@@ -10,26 +10,26 @@ point_count = 2
 
 [sub_resource type="Curve2D" id="Curve2D_3n3gg"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 1849, 599, 0, 0, 0, 0, 1000, 594)
+"points": PackedVector2Array(0, 0, 0, 0, 1849, 599, 334.39993, 79.312805, -334.39993, -79.312805, 1000, 594, -308.67685, 12.861536, 308.67685, -12.861536, 1133, 195, -60.0205, -130.75894, 60.0205, 130.75894, 1544, 349, 0, 0, 0, 0, 1468, 547, 293.67172, 285.09738, -293.67172, -285.09738, 756, 729, 0, 0, 0, 0, 545, 199)
 }
-point_count = 2
+point_count = 7
 
-[node name="Sequencia1" type="Node2D" unique_id=58504271]
+[node name="Sequencia1" type="Node2D"]
 script = ExtResource("1_3n3gg")
 
-[node name="Path2D" type="Path2D" parent="." unique_id=557094630]
+[node name="Path2D" type="Path2D" parent="."]
 curve = SubResource("Curve2D_1oma6")
 
-[node name="PathFollow2D" type="PathFollow2D" parent="Path2D" unique_id=945882319]
+[node name="Inimigo1" type="PathFollow2D" parent="Path2D"]
 position = Vector2(-139, 306)
 rotation = -0.0030302939
 rotates = false
 loop = false
 
-[node name="Path2D2" type="Path2D" parent="." unique_id=902503303]
+[node name="Path2D2" type="Path2D" parent="."]
 curve = SubResource("Curve2D_3n3gg")
 
-[node name="PathFollow2D" type="PathFollow2D" parent="Path2D2" unique_id=1369381478]
+[node name="Inimigo1" type="PathFollow2D" parent="Path2D2"]
 position = Vector2(1849, 599)
 rotates = false
 loop = false
