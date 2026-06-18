@@ -1,0 +1,47 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="GhostShooter"
+run/main_scene="uid://csrnur2y3lwje"
+config/features=PackedStringArray("4.6", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+Stats="*uid://l4cptx4yry6o"
+
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=900
+
+[file_customization]
+
+folder_colors={
+"res://assets/": "blue",
+"res://cenas/": "red",
+"res://scripts/": "green"
+}
+
+[layer_names]
+
+2d_physics/layer_1="default"
+2d_physics/layer_2="Inimigo"
+2d_physics/layer_3="Tiro"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"

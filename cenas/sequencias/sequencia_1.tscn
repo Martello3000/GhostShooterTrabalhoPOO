@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://csrnur2y3lwje"]
+
+[ext_resource type="Script" uid="uid://b4wpjy6aby1ay" path="res://scripts/scriptsSequencias/sequencia_1.gd" id="1_3n3gg"]
+
+[sub_resource type="Curve2D" id="Curve2D_1oma6"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -139, 306, 0, 0, 0, 0, 521, 304)
+}
+point_count = 2
+
+[sub_resource type="Curve2D" id="Curve2D_3n3gg"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 1849, 599, 0, 0, 0, 0, 1000, 594)
+}
+point_count = 2
+
+[node name="Sequencia1" type="Node2D" unique_id=58504271]
+script = ExtResource("1_3n3gg")
+
+[node name="Path2D" type="Path2D" parent="." unique_id=557094630]
+curve = SubResource("Curve2D_1oma6")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D" unique_id=945882319]
+position = Vector2(-139, 306)
+rotation = -0.0030302939
+rotates = false
+loop = false
+
+[node name="Path2D2" type="Path2D" parent="." unique_id=902503303]
+curve = SubResource("Curve2D_3n3gg")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D2" unique_id=1369381478]
+position = Vector2(1849, 599)
+rotates = false
+loop = false
