@@ -1,14 +1,14 @@
-[gd_scene load_steps=21 format=3 uid="uid://bm8723jv36bya"]
+[gd_scene format=3 uid="uid://bm8723jv36bya"]
 
 [ext_resource type="Texture2D" uid="uid://cw1ptut60wkw6" path="res://assets/placeholders/hud/tinyRPG_dragonRegaliaGUI_v1_0/20240707dragon9SlicesC.png" id="1_boc2i"]
 [ext_resource type="Script" uid="uid://bfuudlkpg46lt" path="res://scripts/hud/hud.gd" id="1_tckxf"]
 [ext_resource type="Texture2D" uid="uid://cocf52fqt1rvl" path="res://assets/placeholders/hud/tinyRPG_dragonRegaliaGUI_v1_0/20240707dragon9SlicesATexture.png" id="2_kovif"]
-[ext_resource type="Texture2D" uid="uid://dymufu2cfh4jn" path="res://assets/placeholders/hud/tinyRPG_dragonRegaliaGUI_v1_0/20240713dragonMapFrame.png" id="3_b5mm2"]
 [ext_resource type="Texture2D" uid="uid://305wefpabn7w" path="res://assets/placeholders/hud/tinyRPG_dragonRegaliaGUI_v1_0/20240709dragonBarA.png" id="3_vgdt5"]
 [ext_resource type="Texture2D" uid="uid://b6am8rajnvcbf" path="res://assets/placeholders/hud/tinyRPG_dragonRegaliaGUI_v1_0/20240707dragon9SlicesB.png" id="3_yvfgk"]
 [ext_resource type="Texture2D" uid="uid://bkohlp11ftey" path="res://assets/placeholders/hud/tinyRPG_dragonRegaliaGUI_v1_0/20240707dragon9SlicesA.png" id="4_mwyyg"]
-[ext_resource type="Texture2D" uid="uid://c313nnlbl3kax" path="res://assets/placeholders/shadowwizardmoneygang.png" id="4_ptjvq"]
+[ext_resource type="Texture2D" uid="uid://c88yl7ridvqnl" path="res://assets/placeholders/classes/rostinho.png" id="5_4s7l5"]
 [ext_resource type="Texture2D" uid="uid://blfi5b0n4x7bk" path="res://assets/placeholders/hud/tinyRPG_dragonRegaliaGUI_v1_0/20240707dragonHeaderA.png" id="5_mwyyg"]
+[ext_resource type="Texture2D" uid="uid://d4bbir0ryjnr8" path="res://assets/placeholders/classes/palhaco.png" id="6_1q8n7"]
 [ext_resource type="Texture2D" uid="uid://cre0pkblv5ab7" path="res://assets/placeholders/hud/tinyRPG_dragonRegaliaGUI_v1_0/20240713dragonEmptyFrame.png" id="7_c6fc2"]
 [ext_resource type="FontFile" uid="uid://1ihfvuq4u1dn" path="res://assets/placeholders/VCR_OSD_MONO_1.001.ttf" id="7_xi43s"]
 [ext_resource type="Texture2D" uid="uid://dduk8proxkcmp" path="res://assets/placeholders/handgun-weapon-isolated-png.webp" id="8_xi43s"]
@@ -23,6 +23,196 @@ bg_color = Color(0.2604097, 0.54461664, 0.72364616, 1)
 [sub_resource type="Theme" id="Theme_4s7l5"]
 ProgressBar/styles/background = SubResource("StyleBoxFlat_xi43s")
 ProgressBar/styles/fill = SubResource("StyleBoxFlat_tckxf")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rm5i6"]
+atlas = ExtResource("5_4s7l5")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ikwsm"]
+atlas = ExtResource("5_4s7l5")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2u84e"]
+atlas = ExtResource("5_4s7l5")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_awnmy"]
+atlas = ExtResource("5_4s7l5")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_18yum"]
+atlas = ExtResource("5_4s7l5")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jgwqj"]
+atlas = ExtResource("5_4s7l5")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kmt1r"]
+atlas = ExtResource("5_4s7l5")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ei2s8"]
+atlas = ExtResource("5_4s7l5")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bvoo2"]
+atlas = ExtResource("5_4s7l5")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_78iti"]
+atlas = ExtResource("5_4s7l5")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wtuvb"]
+atlas = ExtResource("5_4s7l5")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dv7aa"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rm5i6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ikwsm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2u84e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_awnmy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_18yum")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jgwqj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kmt1r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ei2s8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bvoo2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_78iti")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtuvb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
 
 [sub_resource type="LabelSettings" id="LabelSettings_4s7l5"]
 font = ExtResource("7_xi43s")
@@ -39,9 +229,9 @@ font = ExtResource("7_xi43s")
 font_size = 60
 font_color = Color(0.99607843, 0.827451, 0, 1)
 
-[node name="HUD" type="CanvasLayer" node_paths=PackedStringArray("classDisplay", "className", "weaponDisplay", "weaponName", "ammo", "pontuacao")]
+[node name="HUD" type="CanvasLayer" unique_id=472590337 node_paths=PackedStringArray("classDisplay", "className", "weaponDisplay", "weaponName", "ammo", "pontuacao")]
 script = ExtResource("1_tckxf")
-classDisplay = NodePath("PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer/Control/ClassTexture")
+classDisplay = NodePath("PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer/Control/ClassTexture/ClassDisplay")
 className = NodePath("PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer/ClassName/Label")
 weaponDisplay = NodePath("PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer2/Control/WeaponDisplay/MarginContainer/WeaponTexture")
 weaponName = NodePath("PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer2/WeaponName/Label")
@@ -49,7 +239,7 @@ ammo = NodePath("PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/Ammo
 pontuacao = NodePath("PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/ScorePanel/MarginContainer/VBoxContainer/score")
 metadata/_edit_use_anchors_ = true
 
-[node name="PanelContainer" type="PanelContainer" parent="."]
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=421060521]
 self_modulate = Color(1, 1, 1, 0)
 anchors_preset = 12
 anchor_top = 1.0
@@ -59,7 +249,7 @@ offset_top = -224.0
 grow_horizontal = 2
 grow_vertical = 0
 
-[node name="NinePatchRect" type="NinePatchRect" parent="PanelContainer"]
+[node name="NinePatchRect" type="NinePatchRect" parent="PanelContainer" unique_id=875485791]
 self_modulate = Color(0.91228896, 0.9122889, 0.91228884, 1)
 layout_mode = 2
 texture = ExtResource("1_boc2i")
@@ -68,16 +258,16 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="TextureRect" type="TextureRect" parent="PanelContainer"]
+[node name="TextureRect" type="TextureRect" parent="PanelContainer" unique_id=1618628615]
 self_modulate = Color(1, 1, 1, 0.09019608)
 layout_mode = 2
 texture = ExtResource("2_kovif")
 stretch_mode = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=279767980]
 layout_mode = 2
 
-[node name="NinePatchRect" type="NinePatchRect" parent="PanelContainer/VBoxContainer"]
+[node name="NinePatchRect" type="NinePatchRect" parent="PanelContainer/VBoxContainer" unique_id=1601091829]
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
 texture = ExtResource("3_vgdt5")
@@ -87,7 +277,7 @@ patch_margin_right = 8
 patch_margin_bottom = 5
 axis_stretch_horizontal = 1
 
-[node name="ProgressBar" type="ProgressBar" parent="PanelContainer/VBoxContainer/NinePatchRect"]
+[node name="ProgressBar" type="ProgressBar" parent="PanelContainer/VBoxContainer/NinePatchRect" unique_id=2087244361]
 custom_minimum_size = Vector2(0, 30)
 layout_mode = 1
 anchors_preset = -1
@@ -103,7 +293,7 @@ value = 6.0
 show_percentage = false
 metadata/_edit_use_anchors_ = true
 
-[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/VBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/VBoxContainer" unique_id=472285124]
 custom_minimum_size = Vector2(100, 180)
 layout_mode = 2
 size_flags_vertical = 8
@@ -111,44 +301,37 @@ theme_override_constants/margin_left = 15
 theme_override_constants/margin_right = 15
 theme_override_constants/margin_bottom = 10
 
-[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VBoxContainer/MarginContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VBoxContainer/MarginContainer" unique_id=337793678]
 layout_mode = 2
 
-[node name="HBoxContainer" type="VBoxContainer" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer"]
+[node name="HBoxContainer" type="VBoxContainer" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer" unique_id=921000349]
 layout_mode = 2
 
-[node name="Control" type="Control" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer"]
+[node name="Control" type="Control" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=210767022]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="ClassTexture" type="TextureRect" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer/Control"]
-custom_minimum_size = Vector2(100, 125)
-layout_mode = 1
+[node name="ClassTexture" type="AnimatedSprite2D" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer/Control" unique_id=656140815]
+position = Vector2(67, 66)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_dv7aa")
+autoplay = "default"
+frame_progress = 0.66946155
+
+[node name="ClassDisplay" type="TextureRect" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer/Control/ClassTexture" unique_id=1163161682]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -10.907318
-offset_right = 10.907318
-offset_bottom = -1.0
+offset_left = -16.0
+offset_top = -16.0
+offset_right = -16.0
+offset_bottom = -16.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("4_ptjvq")
-expand_mode = 3
+size_flags_vertical = 6
+texture = ExtResource("6_1q8n7")
 
-[node name="ClassDisplay" type="TextureRect" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer/Control/ClassTexture"]
-custom_minimum_size = Vector2(120, 120)
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.09295546
-anchor_right = 0.9162753
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_vertical = 3
-texture = ExtResource("3_b5mm2")
-metadata/_edit_use_anchors_ = true
-
-[node name="ClassName" type="NinePatchRect" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer"]
+[node name="ClassName" type="NinePatchRect" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=1228681451]
 custom_minimum_size = Vector2(130, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -157,7 +340,7 @@ texture = ExtResource("5_mwyyg")
 patch_margin_left = 22
 patch_margin_right = 22
 
-[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer/ClassName"]
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer/ClassName" unique_id=1406242776]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -170,14 +353,14 @@ horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="HBoxContainer2" type="VBoxContainer" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer"]
+[node name="HBoxContainer2" type="VBoxContainer" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer" unique_id=1720560996]
 layout_mode = 2
 
-[node name="Control" type="Control" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer2"]
+[node name="Control" type="Control" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer2" unique_id=1218876604]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="WeaponDisplay" type="TextureRect" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer2/Control"]
+[node name="WeaponDisplay" type="TextureRect" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer2/Control" unique_id=2139602052]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -188,7 +371,7 @@ size_flags_horizontal = 0
 texture = ExtResource("4_mwyyg")
 expand_mode = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer2/Control/WeaponDisplay"]
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer2/Control/WeaponDisplay" unique_id=524540332]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -196,16 +379,16 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/margin_left = 10
-theme_override_constants/margin_top = 13
+theme_override_constants/margin_top = 30
 theme_override_constants/margin_right = 10
-theme_override_constants/margin_bottom = 13
+theme_override_constants/margin_bottom = 30
 
-[node name="WeaponTexture" type="TextureRect" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer2/Control/WeaponDisplay/MarginContainer"]
+[node name="WeaponTexture" type="TextureRect" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer2/Control/WeaponDisplay/MarginContainer" unique_id=1699292033]
 layout_mode = 2
 texture = ExtResource("8_xi43s")
 expand_mode = 1
 
-[node name="WeaponName" type="NinePatchRect" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer2"]
+[node name="WeaponName" type="NinePatchRect" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer2" unique_id=301855664]
 custom_minimum_size = Vector2(150, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -214,7 +397,7 @@ texture = ExtResource("5_mwyyg")
 patch_margin_left = 22
 patch_margin_right = 22
 
-[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer2/WeaponName"]
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/HBoxContainer2/WeaponName" unique_id=1246259558]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -227,12 +410,12 @@ horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="AmmoDisplay" type="TextureRect" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer"]
+[node name="AmmoDisplay" type="TextureRect" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer" unique_id=1422305609]
 custom_minimum_size = Vector2(160, 160)
 layout_mode = 2
 texture = ExtResource("7_c6fc2")
 
-[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/AmmoDisplay"]
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/AmmoDisplay" unique_id=23095465]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -244,7 +427,7 @@ theme_override_constants/margin_top = 23
 theme_override_constants/margin_right = 20
 theme_override_constants/margin_bottom = 23
 
-[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/AmmoDisplay/MarginContainer"]
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/AmmoDisplay/MarginContainer" unique_id=1727698061]
 layout_mode = 2
 size_flags_vertical = 1
 text = "6"
@@ -252,7 +435,7 @@ label_settings = SubResource("LabelSettings_ptjvq")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ScorePanel" type="NinePatchRect" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer"]
+[node name="ScorePanel" type="NinePatchRect" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer" unique_id=560220150]
 custom_minimum_size = Vector2(500, 0)
 layout_mode = 2
 size_flags_horizontal = 10
@@ -263,7 +446,7 @@ patch_margin_right = 21
 patch_margin_bottom = 21
 axis_stretch_horizontal = 1
 
-[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/ScorePanel"]
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/ScorePanel" unique_id=1016719094]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -275,16 +458,16 @@ theme_override_constants/margin_top = 15
 theme_override_constants/margin_right = 15
 theme_override_constants/margin_bottom = 15
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/ScorePanel/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/ScorePanel/MarginContainer" unique_id=1194884216]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/ScorePanel/MarginContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/ScorePanel/MarginContainer/VBoxContainer" unique_id=1180275910]
 layout_mode = 2
 size_flags_vertical = 2
 text = "Pontuação:"
 label_settings = ExtResource("13_4s7l5")
 
-[node name="score" type="Label" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/ScorePanel/MarginContainer/VBoxContainer"]
+[node name="score" type="Label" parent="PanelContainer/VBoxContainer/MarginContainer/HBoxContainer/ScorePanel/MarginContainer/VBoxContainer" unique_id=392378206]
 layout_mode = 2
 size_flags_vertical = 2
 text = "1500"

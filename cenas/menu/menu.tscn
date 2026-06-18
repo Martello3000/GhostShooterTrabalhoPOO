@@ -1,14 +1,14 @@
-[gd_scene load_steps=12 format=3 uid="uid://dpnppihywgg83"]
+[gd_scene format=3 uid="uid://dpnppihywgg83"]
 
 [ext_resource type="Texture2D" uid="uid://cw1ptut60wkw6" path="res://assets/placeholders/hud/tinyRPG_dragonRegaliaGUI_v1_0/20240707dragon9SlicesC.png" id="1_60k4o"]
 [ext_resource type="Script" uid="uid://c061hulcwum4q" path="res://scripts/hud/menu.gd" id="1_w5r64"]
 [ext_resource type="Texture2D" uid="uid://b6am8rajnvcbf" path="res://assets/placeholders/hud/tinyRPG_dragonRegaliaGUI_v1_0/20240707dragon9SlicesB.png" id="2_0d58v"]
 [ext_resource type="Texture2D" uid="uid://cocf52fqt1rvl" path="res://assets/placeholders/hud/tinyRPG_dragonRegaliaGUI_v1_0/20240707dragon9SlicesATexture.png" id="2_qq8fe"]
 [ext_resource type="Texture2D" uid="uid://blfi5b0n4x7bk" path="res://assets/placeholders/hud/tinyRPG_dragonRegaliaGUI_v1_0/20240707dragonHeaderA.png" id="3_qq8fe"]
-[ext_resource type="Texture2D" uid="uid://xdxvatdeiguv" path="res://assets/placeholders/archer.png" id="4_vm4ax"]
 [ext_resource type="FontFile" uid="uid://1ihfvuq4u1dn" path="res://assets/placeholders/VCR_OSD_MONO_1.001.ttf" id="4_w5bce"]
-[ext_resource type="Texture2D" uid="uid://bau5pk1a4f5y8" path="res://assets/placeholders/rogue.png" id="7_w5r64"]
-[ext_resource type="Texture2D" uid="uid://b1l1awlpu7ys7" path="res://assets/placeholders/shadowwizard.jpg" id="8_k1cbc"]
+[ext_resource type="Texture2D" uid="uid://bawu1b2dkd6tc" path="res://assets/placeholders/classes/acrobat.png" id="5_w5r64"]
+[ext_resource type="Texture2D" uid="uid://dp6djc0jkykhr" path="res://assets/placeholders/classes/palhacao.png" id="8_k1cbc"]
+[ext_resource type="Texture2D" uid="uid://c8p3vau8oxjpl" path="res://assets/placeholders/classes/chapeusao.png" id="9_o6qxx"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_nkbd6"]
 font = ExtResource("4_w5bce")
@@ -17,10 +17,10 @@ font = ExtResource("4_w5bce")
 font = ExtResource("4_w5bce")
 font_size = 35
 
-[node name="Menu" type="CanvasLayer"]
+[node name="Menu" type="CanvasLayer" unique_id=177677686]
 script = ExtResource("1_w5r64")
 
-[node name="Control" type="Control" parent="."]
+[node name="Control" type="Control" parent="." unique_id=2070811582]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -28,7 +28,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="NinePatchRect" type="NinePatchRect" parent="Control"]
+[node name="NinePatchRect" type="NinePatchRect" parent="Control" unique_id=1035615708]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -44,7 +44,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="MarginContainer" type="MarginContainer" parent="Control"]
+[node name="MarginContainer" type="MarginContainer" parent="Control" unique_id=931232646]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -56,21 +56,21 @@ theme_override_constants/margin_top = 50
 theme_override_constants/margin_right = 80
 theme_override_constants/margin_bottom = 50
 
-[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer"]
+[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer" unique_id=1944115695]
 self_modulate = Color(1, 1, 1, 0.19607843)
 layout_mode = 2
 texture = ExtResource("2_qq8fe")
 stretch_mode = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Control/MarginContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/MarginContainer" unique_id=319110078]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer/HBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer/HBoxContainer" unique_id=817431685]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
 
-[node name="NinePatchRect" type="NinePatchRect" parent="Control/MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="NinePatchRect" type="NinePatchRect" parent="Control/MarginContainer/HBoxContainer/VBoxContainer" unique_id=360642901]
 custom_minimum_size = Vector2(400, 500)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -81,7 +81,7 @@ patch_margin_top = 23
 patch_margin_right = 23
 patch_margin_bottom = 23
 
-[node name="MarginContainer" type="MarginContainer" parent="Control/MarginContainer/HBoxContainer/VBoxContainer/NinePatchRect"]
+[node name="MarginContainer" type="MarginContainer" parent="Control/MarginContainer/HBoxContainer/VBoxContainer/NinePatchRect" unique_id=1375790598]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -93,16 +93,16 @@ theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
 
-[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer/HBoxContainer/VBoxContainer/NinePatchRect/MarginContainer"]
+[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer/HBoxContainer/VBoxContainer/NinePatchRect/MarginContainer" unique_id=463685223]
 layout_mode = 2
-texture = ExtResource("4_vm4ax")
+texture = ExtResource("5_w5r64")
 expand_mode = 1
 
-[node name="Button" type="Button" parent="Control/MarginContainer/HBoxContainer/VBoxContainer/NinePatchRect/MarginContainer"]
+[node name="Button" type="Button" parent="Control/MarginContainer/HBoxContainer/VBoxContainer/NinePatchRect/MarginContainer" unique_id=1190996329]
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 
-[node name="WeaponName" type="NinePatchRect" parent="Control/MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="WeaponName" type="NinePatchRect" parent="Control/MarginContainer/HBoxContainer/VBoxContainer" unique_id=577903569]
 custom_minimum_size = Vector2(150, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -111,20 +111,20 @@ texture = ExtResource("3_qq8fe")
 patch_margin_left = 22
 patch_margin_right = 22
 
-[node name="Label" type="Label" parent="Control/MarginContainer/HBoxContainer/VBoxContainer/WeaponName"]
+[node name="Label" type="Label" parent="Control/MarginContainer/HBoxContainer/VBoxContainer/WeaponName" unique_id=956460097]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 0.75
 grow_horizontal = 2
 grow_vertical = 2
-text = "Arqueiro"
+text = "Acrobata"
 label_settings = SubResource("LabelSettings_nkbd6")
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="NinePatchRect2" type="NinePatchRect" parent="Control/MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="NinePatchRect2" type="NinePatchRect" parent="Control/MarginContainer/HBoxContainer/VBoxContainer" unique_id=37709600]
 custom_minimum_size = Vector2(400, 100)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -135,7 +135,7 @@ patch_margin_top = 23
 patch_margin_right = 23
 patch_margin_bottom = 23
 
-[node name="Label" type="Label" parent="Control/MarginContainer/HBoxContainer/VBoxContainer/NinePatchRect2"]
+[node name="Label" type="Label" parent="Control/MarginContainer/HBoxContainer/VBoxContainer/NinePatchRect2" unique_id=2007117151]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -153,12 +153,12 @@ text = "-50% Tempo de
 label_settings = SubResource("LabelSettings_vm4ax")
 horizontal_alignment = 1
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="Control/MarginContainer/HBoxContainer"]
+[node name="VBoxContainer2" type="VBoxContainer" parent="Control/MarginContainer/HBoxContainer" unique_id=496793596]
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4
 
-[node name="NinePatchRect" type="NinePatchRect" parent="Control/MarginContainer/HBoxContainer/VBoxContainer2"]
+[node name="NinePatchRect" type="NinePatchRect" parent="Control/MarginContainer/HBoxContainer/VBoxContainer2" unique_id=1410825153]
 custom_minimum_size = Vector2(400, 500)
 layout_mode = 2
 size_flags_horizontal = 0
@@ -169,7 +169,7 @@ patch_margin_top = 23
 patch_margin_right = 23
 patch_margin_bottom = 23
 
-[node name="MarginContainer" type="MarginContainer" parent="Control/MarginContainer/HBoxContainer/VBoxContainer2/NinePatchRect"]
+[node name="MarginContainer" type="MarginContainer" parent="Control/MarginContainer/HBoxContainer/VBoxContainer2/NinePatchRect" unique_id=912523640]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -181,16 +181,16 @@ theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
 
-[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer/HBoxContainer/VBoxContainer2/NinePatchRect/MarginContainer"]
+[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer/HBoxContainer/VBoxContainer2/NinePatchRect/MarginContainer" unique_id=880293134]
 layout_mode = 2
-texture = ExtResource("7_w5r64")
+texture = ExtResource("8_k1cbc")
 expand_mode = 1
 
-[node name="Button" type="Button" parent="Control/MarginContainer/HBoxContainer/VBoxContainer2/NinePatchRect/MarginContainer"]
+[node name="Button" type="Button" parent="Control/MarginContainer/HBoxContainer/VBoxContainer2/NinePatchRect/MarginContainer" unique_id=1196622436]
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 
-[node name="WeaponName" type="NinePatchRect" parent="Control/MarginContainer/HBoxContainer/VBoxContainer2"]
+[node name="WeaponName" type="NinePatchRect" parent="Control/MarginContainer/HBoxContainer/VBoxContainer2" unique_id=499407146]
 custom_minimum_size = Vector2(150, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -199,20 +199,20 @@ texture = ExtResource("3_qq8fe")
 patch_margin_left = 22
 patch_margin_right = 22
 
-[node name="Label" type="Label" parent="Control/MarginContainer/HBoxContainer/VBoxContainer2/WeaponName"]
+[node name="Label" type="Label" parent="Control/MarginContainer/HBoxContainer/VBoxContainer2/WeaponName" unique_id=1619342451]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 0.75
 grow_horizontal = 2
 grow_vertical = 2
-text = "Ladino"
+text = "Palhaço"
 label_settings = SubResource("LabelSettings_nkbd6")
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="NinePatchRect2" type="NinePatchRect" parent="Control/MarginContainer/HBoxContainer/VBoxContainer2"]
+[node name="NinePatchRect2" type="NinePatchRect" parent="Control/MarginContainer/HBoxContainer/VBoxContainer2" unique_id=1788899851]
 custom_minimum_size = Vector2(400, 100)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -223,7 +223,7 @@ patch_margin_top = 23
 patch_margin_right = 23
 patch_margin_bottom = 23
 
-[node name="Label" type="Label" parent="Control/MarginContainer/HBoxContainer/VBoxContainer2/NinePatchRect2"]
+[node name="Label" type="Label" parent="Control/MarginContainer/HBoxContainer/VBoxContainer2/NinePatchRect2" unique_id=871893000]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -241,12 +241,12 @@ tiros"
 label_settings = SubResource("LabelSettings_vm4ax")
 horizontal_alignment = 1
 
-[node name="VBoxContainer3" type="VBoxContainer" parent="Control/MarginContainer/HBoxContainer"]
+[node name="VBoxContainer3" type="VBoxContainer" parent="Control/MarginContainer/HBoxContainer" unique_id=1345204166]
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 4
 
-[node name="NinePatchRect" type="NinePatchRect" parent="Control/MarginContainer/HBoxContainer/VBoxContainer3"]
+[node name="NinePatchRect" type="NinePatchRect" parent="Control/MarginContainer/HBoxContainer/VBoxContainer3" unique_id=885166708]
 custom_minimum_size = Vector2(400, 500)
 layout_mode = 2
 size_flags_horizontal = 0
@@ -257,7 +257,7 @@ patch_margin_top = 23
 patch_margin_right = 23
 patch_margin_bottom = 23
 
-[node name="MarginContainer" type="MarginContainer" parent="Control/MarginContainer/HBoxContainer/VBoxContainer3/NinePatchRect"]
+[node name="MarginContainer" type="MarginContainer" parent="Control/MarginContainer/HBoxContainer/VBoxContainer3/NinePatchRect" unique_id=899561548]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -269,16 +269,16 @@ theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
 
-[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer/HBoxContainer/VBoxContainer3/NinePatchRect/MarginContainer"]
+[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer/HBoxContainer/VBoxContainer3/NinePatchRect/MarginContainer" unique_id=1320987822]
 layout_mode = 2
-texture = ExtResource("8_k1cbc")
+texture = ExtResource("9_o6qxx")
 expand_mode = 1
 
-[node name="Button" type="Button" parent="Control/MarginContainer/HBoxContainer/VBoxContainer3/NinePatchRect/MarginContainer"]
+[node name="Button" type="Button" parent="Control/MarginContainer/HBoxContainer/VBoxContainer3/NinePatchRect/MarginContainer" unique_id=944028228]
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 
-[node name="WeaponName" type="NinePatchRect" parent="Control/MarginContainer/HBoxContainer/VBoxContainer3"]
+[node name="WeaponName" type="NinePatchRect" parent="Control/MarginContainer/HBoxContainer/VBoxContainer3" unique_id=767072482]
 custom_minimum_size = Vector2(150, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -287,7 +287,7 @@ texture = ExtResource("3_qq8fe")
 patch_margin_left = 22
 patch_margin_right = 22
 
-[node name="Label" type="Label" parent="Control/MarginContainer/HBoxContainer/VBoxContainer3/WeaponName"]
+[node name="Label" type="Label" parent="Control/MarginContainer/HBoxContainer/VBoxContainer3/WeaponName" unique_id=446640484]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -300,7 +300,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="NinePatchRect2" type="NinePatchRect" parent="Control/MarginContainer/HBoxContainer/VBoxContainer3"]
+[node name="NinePatchRect2" type="NinePatchRect" parent="Control/MarginContainer/HBoxContainer/VBoxContainer3" unique_id=389682542]
 custom_minimum_size = Vector2(250, 100)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -311,7 +311,7 @@ patch_margin_top = 23
 patch_margin_right = 23
 patch_margin_bottom = 23
 
-[node name="Label" type="Label" parent="Control/MarginContainer/HBoxContainer/VBoxContainer3/NinePatchRect2"]
+[node name="Label" type="Label" parent="Control/MarginContainer/HBoxContainer/VBoxContainer3/NinePatchRect2" unique_id=988693593]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5

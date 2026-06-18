@@ -11,17 +11,17 @@ signal fase_over
 
 
 var classes = {
-	"Arqueiro" = preload("res://assets/placeholders/archer.png"),
-	"Ladino" = preload("res://assets/placeholders/rogue.png"),
-	"Mago" = preload("res://assets/placeholders/shadowwizardmoneygang.png")
+	"Acrobata" = preload("res://assets/placeholders/classes/balanco.png"),
+	"Palhaço" = preload("res://assets/placeholders/classes/palhaco.png"),
+	"Mago" = preload("res://assets/placeholders/classes/chapeu.png")
 	
 }
 var classe_atual
 
 var armas = {
-	"Pistola" = preload("res://assets/placeholders/handgun-weapon-isolated-png.webp"),
-	"Shotgun" = preload("res://assets/placeholders/shotgunpng.webp"),
-	"Sniper" = preload("res://assets/placeholders/sniperpng.png")
+	"Pistola" = preload("res://assets/placeholders/armas/pistolaAgua.png"),
+	"Shotgun" = preload("res://assets/placeholders/armas/shotgunAgua.png"),
+	"Sniper" = preload("res://assets/placeholders/armas/sniperAgua.png")
 }
 var arma_equipada = "Pistola"
 

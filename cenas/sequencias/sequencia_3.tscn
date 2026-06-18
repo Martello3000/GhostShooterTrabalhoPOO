@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://ex5ynoodv2hd"]
+
+[ext_resource type="Script" uid="uid://b3fa47iju8asq" path="res://scripts/scriptsSequencias/sequencia_3.gd" id="1_e8ciw"]
+
+[sub_resource type="Curve2D" id="Curve2D_lt8li"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 695, -138, 411.56915, -30.01025, -411.56915, 30.01025, 374, 521, -227.22046, -580.91266, 227.22046, 580.91266, 132, -146, -540.3262, 12.4009285, 540.3262, -12.4009285, 778, 497, 0, 0, 0, 0, 1720, 9)
+}
+point_count = 5
+
+[sub_resource type="Curve2D" id="Curve2D_e8ciw"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 804, -119, -410.8489, 11.41247, 410.8489, -11.41247, 1166, 511, 0, 0, 0, 0, 1586, -210, 1004.29736, -54.209232, -1004.29736, 54.209232, 1842, 457, 0, 0, 0, 0, -155, 446)
+}
+point_count = 5
+
+[sub_resource type="Curve2D" id="Curve2D_ajda8"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -218, 93, 0, 0, 0, 0, 2230, 80)
+}
+point_count = 2
+
+[sub_resource type="Curve2D" id="Curve2D_rgoej"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 578, 1756, 396.83875, 1399.3787, -396.83875, -1399.3787, 507, -443, 0, 0, 0, 0, -312, 694, 0, 0, 0, 0, 2317, 598)
+}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve2D_40l2k"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 957, 1746, -62.65875, 1052.667, 62.65875, -1052.667, 977, -463, 0, 0, 0, 0, 2201, 689, 0, 0, 0, 0, -387, 593)
+}
+point_count = 4
+
+[node name="sequencia3" type="Node2D" unique_id=1714985661]
+script = ExtResource("1_e8ciw")
+
+[node name="Path2D" type="Path2D" parent="." unique_id=1155648383]
+curve = SubResource("Curve2D_lt8li")
+
+[node name="Alvo2" type="PathFollow2D" parent="Path2D" unique_id=1195396642]
+position = Vector2(695, -138)
+rotation = 1.4277878
+
+[node name="Path2D2" type="Path2D" parent="." unique_id=735941857]
+curve = SubResource("Curve2D_e8ciw")
+
+[node name="Alvo2" type="PathFollow2D" parent="Path2D2" unique_id=1394305246]
+position = Vector2(804, -119)
+rotation = 1.6468079
+
+[node name="Path2D3" type="Path2D" parent="." unique_id=270839404]
+curve = SubResource("Curve2D_ajda8")
+
+[node name="Alvo1" type="PathFollow2D" parent="Path2D3" unique_id=1148631420]
+position = Vector2(-218, 93)
+rotation = -0.0053104074
+
+[node name="Path2D4" type="Path2D" parent="." unique_id=1655533070]
+position = Vector2(-15, 96)
+curve = SubResource("Curve2D_ajda8")
+
+[node name="Alvo1" type="PathFollow2D" parent="Path2D4" unique_id=1439154430]
+position = Vector2(-218, 93)
+rotation = -0.0053104074
+
+[node name="Path2D5" type="Path2D" parent="." unique_id=1392380979]
+curve = SubResource("Curve2D_rgoej")
+
+[node name="Alvo1" type="PathFollow2D" parent="Path2D5" unique_id=1460478115]
+position = Vector2(578, 1756)
+rotation = -1.1838486
+
+[node name="Path2D6" type="Path2D" parent="." unique_id=772872356]
+curve = SubResource("Curve2D_40l2k")
+
+[node name="Alvo1" type="PathFollow2D" parent="Path2D6" unique_id=2038844992]
+position = Vector2(957, 1746)
+rotation = -1.607671

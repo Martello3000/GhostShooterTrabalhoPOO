@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://d13q48w762xim"]
+
+[ext_resource type="Script" uid="uid://dxr3pr46npn6s" path="res://scripts/scriptsSequencias/sequencia_4.gd" id="1_kphtm"]
+
+[sub_resource type="Curve2D" id="Curve2D_irfib"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -879, 82, 0, 0, 0, 0, 316, 103, 2.1435893, -244.36917, -2.1435893, 244.36917, 757, 334, 0, 0, 0, 0, 1227, 531, 0, 0, 0, 0, 2045, 531, 582.4132, -261.73227, -582.4132, 261.73227, 1594, 1, 0, 0, 0, 0, -381, 552)
+}
+point_count = 7
+
+[sub_resource type="Curve2D" id="Curve2D_kphtm"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 523, 980, -265.80505, 68.594864, 265.80505, -68.594864, 460, 538, -36.441017, 79.312805, 36.441017, -79.312805, 733, 415, 175.77432, 139.3333, -175.77432, -139.3333, 557, 152, 0, 0, 0, 0, 971, -209, 0, 0, 0, 0, 203, -81, -391.6552, -106.34347, 391.6552, 106.34347, 805, 600, 0, 0, 0, 0, 1772, 622)
+}
+point_count = 8
+
+[sub_resource type="Curve2D" id="Curve2D_cpikq"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 1738, 376, 128.39029, 14.265587, -128.39029, -14.265587, 1255, 254, 194.012, 34.23741, -194.012, -34.23741, 944, 406, 148.3621, -25.678057, -148.3621, 25.678057, 522, 228, 111.27158, -179.7464, -111.27158, 179.7464, 304, 471, 0, 0, 0, 0, -116, 273)
+}
+point_count = 6
+
+[node name="sequencia4" type="Node2D" unique_id=1545331024]
+script = ExtResource("1_kphtm")
+
+[node name="Path2D" type="Path2D" parent="." unique_id=487467077]
+curve = SubResource("Curve2D_irfib")
+
+[node name="Alvo1" type="PathFollow2D" parent="Path2D" unique_id=1637194845]
+position = Vector2(-879, 82)
+rotation = 0.017571414
+
+[node name="Path2D2" type="Path2D" parent="." unique_id=746712900]
+position = Vector2(3, 24)
+curve = SubResource("Curve2D_irfib")
+
+[node name="Alvo1" type="PathFollow2D" parent="Path2D2" unique_id=1128359351]
+position = Vector2(-879, 82)
+rotation = 0.017571414
+
+[node name="Path2D3" type="Path2D" parent="." unique_id=416203672]
+position = Vector2(7, -24)
+curve = SubResource("Curve2D_irfib")
+
+[node name="Alvo1" type="PathFollow2D" parent="Path2D3" unique_id=1657915660]
+position = Vector2(-879, 82)
+rotation = 0.017571414
+
+[node name="Path2D4" type="Path2D" parent="." unique_id=803798950]
+position = Vector2(52, 0)
+curve = SubResource("Curve2D_irfib")
+
+[node name="Alvo1" type="PathFollow2D" parent="Path2D4" unique_id=910480098]
+position = Vector2(-879, 82)
+rotation = 0.017571414
+
+[node name="Path2D5" type="Path2D" parent="." unique_id=74318235]
+position = Vector2(35, 24)
+curve = SubResource("Curve2D_irfib")
+
+[node name="Alvo1" type="PathFollow2D" parent="Path2D5" unique_id=1416825162]
+position = Vector2(-879, 82)
+rotation = 0.017571414
+
+[node name="Path2D6" type="Path2D" parent="." unique_id=1707936702]
+position = Vector2(41, -24)
+curve = SubResource("Curve2D_irfib")
+
+[node name="Alvo1" type="PathFollow2D" parent="Path2D6" unique_id=568149478]
+position = Vector2(-879, 82)
+rotation = 0.017571414
+
+[node name="Path2D7" type="Path2D" parent="." unique_id=1142123844]
+curve = SubResource("Curve2D_kphtm")
+
+[node name="Alvo2" type="PathFollow2D" parent="Path2D7" unique_id=2092512852]
+position = Vector2(523, 980)
+rotation = -2.2927659
+
+[node name="Path2D8" type="Path2D" parent="." unique_id=1681479669]
+curve = SubResource("Curve2D_cpikq")
+
+[node name="Alvo1" type="PathFollow2D" parent="Path2D8" unique_id=1768402554]
+position = Vector2(1738, 376)
+rotation = -2.846643
