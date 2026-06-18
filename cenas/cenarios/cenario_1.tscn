@@ -10,7 +10,6 @@
 [ext_resource type="Texture2D" uid="uid://cri83irdthrow" path="res://assets/placeholders/cenario/water1.png" id="8_efqff"]
 [ext_resource type="Texture2D" uid="uid://bjx6xut62vrhu" path="res://assets/placeholders/cenario/curtain.png" id="9_lmn1v"]
 [ext_resource type="Texture2D" uid="uid://dut4wcbonpnvi" path="res://assets/placeholders/cenario/curtain_top.png" id="10_4baps"]
-[ext_resource type="Texture2D" uid="uid://cvx65ib4ydkt5" path="res://assets/placeholders/Screenshot_1244.png" id="11_44y6m"]
 [ext_resource type="Texture2D" uid="uid://d4mv4yfjcobd6" path="res://assets/placeholders/cenario/curtain_straight.png" id="11_v4c51"]
 
 [node name="Cenario1" type="Node2D" unique_id=1385884628]
@@ -106,17 +105,6 @@ offset_top = -3.0
 offset_right = 1624.0
 offset_bottom = 97.0
 texture = ExtResource("10_4baps")
-
-[node name="ColorRect" type="ColorRect" parent="." unique_id=358229605]
-offset_left = -2.0
-offset_top = 679.0
-offset_right = 1597.0
-offset_bottom = 901.0
-
-[node name="Screenshot1244" type="Sprite2D" parent="." unique_id=1345847461]
-position = Vector2(334.00003, 803.00006)
-scale = Vector2(0.58979595, 0.35027727)
-texture = ExtResource("11_44y6m")
 
 [node name="cortinabaixo" type="TextureRect" parent="." unique_id=1578985619]
 offset_left = -5.0
