@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://mu7whawb81hm"]
+
+[ext_resource type="Script" uid="uid://bmwbq0p0ryrfo" path="res://scripts/scriptsInimigos/alvo_2.gd" id="1_achot"]
+[ext_resource type="Texture2D" uid="uid://cdib2kgx4dyyq" path="res://assets/placeholders/inimigos/alvos/duck_outline_yellow.png" id="2_nsy7a"]
+[ext_resource type="Texture2D" uid="uid://c3gjtt11f2eot" path="res://assets/placeholders/inimigos/suportes/stick_metal.png" id="3_8fgh7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_o41r1"]
+radius = 53.235325
+
+[node name="Alvo2" type="Node2D" unique_id=553246476]
+script = ExtResource("1_achot")
+
+[node name="AlvoPrincipal" type="Sprite2D" parent="." unique_id=309620961]
+texture = ExtResource("2_nsy7a")
+
+[node name="Suporte" type="Sprite2D" parent="AlvoPrincipal" unique_id=1922076587]
+z_index = -1
+position = Vector2(0, 111)
+texture = ExtResource("3_8fgh7")
+
+[node name="Hurtbox" type="Area2D" parent="." unique_id=349502756]
+collision_layer = 2
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" unique_id=1851669282]
+shape = SubResource("CircleShape2D_o41r1")

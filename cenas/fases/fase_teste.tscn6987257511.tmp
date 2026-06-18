@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bs6x5uqkocrsg"]
+
+[ext_resource type="Script" uid="uid://dkrysvoiq4o86" path="res://scripts/scriptsFases/fase_teste.gd" id="1_6lxan"]
+[ext_resource type="PackedScene" uid="uid://80oi1yv5yq2r" path="res://cenas/player/player.tscn" id="2_ng6jg"]
+
+[node name="FaseTeste" type="Node2D" unique_id=1856662798]
+script = ExtResource("1_6lxan")
+
+[node name="Player" parent="." unique_id=331922840 instance=ExtResource("2_ng6jg")]

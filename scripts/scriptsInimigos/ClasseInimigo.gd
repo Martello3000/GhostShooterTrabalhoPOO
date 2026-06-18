@@ -13,10 +13,17 @@ func _physics_process(delta: float) -> void:
 		path.progress += velocidade * delta
 		if is_equal_approx(path.progress_ratio, 1.0):
 			andando = false
+			Stats.alvo_over.emit()
+			queue_free()
+	
+	if vida <= 0:
+		morrer()
 
 
 func definirPath(novo_path):
 	path = novo_path
 
 func morrer():
+	andando = false
+	Stats.alvo_over.emit()
 	queue_free()

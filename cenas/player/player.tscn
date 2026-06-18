@@ -1,7 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://80oi1yv5yq2r"]
+[gd_scene format=3 uid="uid://80oi1yv5yq2r"]
 
 [ext_resource type="Script" uid="uid://cubri1vedqnts" path="res://scripts/scriptsPlayer/player.gd" id="1_w152q"]
 [ext_resource type="Texture2D" uid="uid://d0apyxj4f67ss" path="res://assets/placeholders/crosshairs/Circle_Crosshair8.png" id="2_4i5rx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_w152q"]
+radius = 35.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_a8ubr"]
 animations = [{
@@ -14,27 +17,40 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_w152q"]
-radius = 35.014282
-
-[node name="Player" type="Node2D" node_paths=PackedStringArray("crosshair", "hitbox_tiro", "CDTimer")]
+[node name="Player" type="Node2D" unique_id=331922840 node_paths=PackedStringArray("crosshair", "colisao_tiro", "hitbox_tiro", "CDTimer", "BarraCD")]
+z_index = 2
 script = ExtResource("1_w152q")
 crosshair = NodePath("Mira")
-hitbox_tiro = NodePath("Mira/HitboxTiro/CollisionShape2D")
+colisao_tiro = NodePath("HitboxTiro/CollisionShape2D")
+hitbox_tiro = NodePath("HitboxTiro")
 CDTimer = NodePath("CooldownTimer")
+BarraCD = NodePath("Mira/ProgressBar")
 
-[node name="Mira" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_a8ubr")
+[node name="HitboxTiro" type="Area2D" parent="." unique_id=1899716464]
+collision_layer = 4
+collision_mask = 2
 
-[node name="HitboxTiro" type="Area2D" parent="Mira"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Mira/HitboxTiro"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxTiro" unique_id=1504631941]
 shape = SubResource("CircleShape2D_w152q")
 disabled = true
 debug_color = Color(1, 0, 0, 0.41960785)
 
-[node name="CooldownTimer" type="Timer" parent="."]
-wait_time = 2.0
+[node name="Mira" type="AnimatedSprite2D" parent="." unique_id=1507518508]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_a8ubr")
+
+[node name="ProgressBar" type="ProgressBar" parent="Mira" unique_id=971698287]
+texture_filter = 1
+offset_left = -44.0
+offset_top = 56.0
+offset_right = 44.0
+offset_bottom = 72.0
+max_value = 0.0
+show_percentage = false
+
+[node name="CooldownTimer" type="Timer" parent="." unique_id=970569641]
+wait_time = 0.25
 one_shot = true
 
+[connection signal="area_entered" from="HitboxTiro" to="." method="_on_hitbox_tiro_area_entered"]
 [connection signal="timeout" from="CooldownTimer" to="." method="_on_cooldown_timer_timeout"]

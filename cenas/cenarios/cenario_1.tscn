@@ -1,0 +1,126 @@
+[gd_scene format=3 uid="uid://c5lmxt75cgwas"]
+
+[ext_resource type="Texture2D" uid="uid://4hwwm2dq42kl" path="res://assets/placeholders/cenario/bg_wood.png" id="1_1vmlk"]
+[ext_resource type="Texture2D" uid="uid://p6r2mr33jlul" path="res://assets/placeholders/cenario/cloud2.png" id="2_44y6m"]
+[ext_resource type="Texture2D" uid="uid://dmqln28aj0m44" path="res://assets/placeholders/cenario/cloud1.png" id="3_br4vt"]
+[ext_resource type="Texture2D" uid="uid://c3mqe4lfj1x04" path="res://assets/placeholders/cenario/grass2.png" id="4_r4o1c"]
+[ext_resource type="Texture2D" uid="uid://48or65ivmr5v" path="res://assets/placeholders/cenario/tree_oak.png" id="5_lkyxi"]
+[ext_resource type="Texture2D" uid="uid://i07dlawoiljf" path="res://assets/placeholders/cenario/tree_pine.png" id="6_611bv"]
+[ext_resource type="Texture2D" uid="uid://dcd34401cxlt4" path="res://assets/placeholders/cenario/grass1.png" id="7_ggvpt"]
+[ext_resource type="Texture2D" uid="uid://cri83irdthrow" path="res://assets/placeholders/cenario/water1.png" id="8_efqff"]
+[ext_resource type="Texture2D" uid="uid://bjx6xut62vrhu" path="res://assets/placeholders/cenario/curtain.png" id="9_lmn1v"]
+[ext_resource type="Texture2D" uid="uid://dut4wcbonpnvi" path="res://assets/placeholders/cenario/curtain_top.png" id="10_4baps"]
+[ext_resource type="Texture2D" uid="uid://cvx65ib4ydkt5" path="res://assets/placeholders/Screenshot_1244.png" id="11_44y6m"]
+[ext_resource type="Texture2D" uid="uid://d4mv4yfjcobd6" path="res://assets/placeholders/cenario/curtain_straight.png" id="11_v4c51"]
+
+[node name="Cenario1" type="Node2D" unique_id=1385884628]
+z_index = 1
+
+[node name="Background" type="TextureRect" parent="." unique_id=1000687545]
+z_index = -1
+z_as_relative = false
+offset_right = 1597.0
+offset_bottom = 901.0
+texture = ExtResource("1_1vmlk")
+stretch_mode = 1
+
+[node name="nuver2" type="TextureRect" parent="Background" unique_id=2031239719]
+texture_filter = 1
+layout_mode = 0
+offset_left = 925.0
+offset_top = -75.0
+offset_right = 1362.0
+offset_bottom = 170.0
+texture = ExtResource("2_44y6m")
+
+[node name="nuver" type="TextureRect" parent="Background" unique_id=11900559]
+texture_filter = 1
+layout_mode = 0
+offset_left = 220.0
+offset_top = -79.0
+offset_right = 657.0
+offset_bottom = 166.0
+texture = ExtResource("3_br4vt")
+
+[node name="grama2" type="TextureRect" parent="Background" unique_id=1522180369]
+layout_mode = 0
+offset_left = -14.0
+offset_top = 431.0
+offset_right = 1642.0
+offset_bottom = 647.0
+texture = ExtResource("4_r4o1c")
+stretch_mode = 1
+
+[node name="arvore" type="TextureRect" parent="Background" unique_id=2019985087]
+texture_filter = 1
+layout_mode = 0
+offset_left = 171.0
+offset_top = 69.0
+offset_right = 608.0
+offset_bottom = 518.0
+texture = ExtResource("5_lkyxi")
+
+[node name="arvore2" type="TextureRect" parent="Background" unique_id=661597869]
+texture_filter = 1
+layout_mode = 0
+offset_left = 949.0
+offset_top = 64.0
+offset_right = 1386.0
+offset_bottom = 513.0
+texture = ExtResource("6_611bv")
+
+[node name="grama" type="TextureRect" parent="Background" unique_id=1614091087]
+layout_mode = 0
+offset_left = -7.0
+offset_top = 468.0
+offset_right = 1649.0
+offset_bottom = 668.0
+texture = ExtResource("7_ggvpt")
+stretch_mode = 1
+
+[node name="Agua" type="TextureRect" parent="." unique_id=928673242]
+offset_left = -16.0
+offset_top = 573.0
+offset_right = 1616.0
+offset_bottom = 797.0
+texture = ExtResource("8_efqff")
+stretch_mode = 1
+
+[node name="cortinalado" type="TextureRect" parent="." unique_id=1901000363]
+offset_left = -9.0
+offset_top = 2.0
+offset_right = 193.0
+offset_bottom = 706.0
+texture = ExtResource("9_lmn1v")
+
+[node name="cortinalado2" type="TextureRect" parent="." unique_id=1121599789]
+offset_left = 1406.0
+offset_right = 1601.0
+offset_bottom = 704.0
+texture = ExtResource("9_lmn1v")
+flip_h = true
+
+[node name="cortinacima" type="TextureRect" parent="." unique_id=1364946820]
+offset_left = -8.0
+offset_top = -3.0
+offset_right = 1624.0
+offset_bottom = 97.0
+texture = ExtResource("10_4baps")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=358229605]
+offset_left = -2.0
+offset_top = 679.0
+offset_right = 1597.0
+offset_bottom = 901.0
+
+[node name="Screenshot1244" type="Sprite2D" parent="." unique_id=1345847461]
+position = Vector2(334.00003, 803.00006)
+scale = Vector2(0.58979595, 0.35027727)
+texture = ExtResource("11_44y6m")
+
+[node name="cortinabaixo" type="TextureRect" parent="." unique_id=1578985619]
+offset_left = -5.0
+offset_top = 678.0
+offset_right = 1597.0
+offset_bottom = 758.0
+texture = ExtResource("11_v4c51")
